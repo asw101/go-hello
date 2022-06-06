@@ -16,7 +16,7 @@ spec:
       serviceAccountName: hello
       containers:
         - name: hello
-          image: "ghcr.io/asw101/hello:latest"
+          image: "ghcr.io/asw101/go-hello:latest"
           imagePullPolicy: Always
           env:
           - name: LISTEN_ADDR

@@ -21,12 +21,5 @@ patches:
       spec:
         host: hello.0.0.0.0.nip.io
 
-  # TODO: we need to work out how to patch the host
-  # - patch: |-
-  #     apiVersion: networking.k8s.io/v1
-  #     kind: Ingress
-  #     metadata:
-  #       name: hello
-  #     spec:
-  #       rules:
-  #       - host: hello.0.0.0.0.nip.io
+# replace 0.0.0.0 above with the output of
+# kubectl get service -n ingress-nginx ingress-nginx-controller --output jsonpath='{.status.loadBalancer.ingress[0].ip}'

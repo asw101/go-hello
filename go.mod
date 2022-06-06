@@ -1,3 +1,3 @@
-module github.com/asw101/tmp/go-hello
+module github.com/asw101/go-hello
 
 go 1.17
